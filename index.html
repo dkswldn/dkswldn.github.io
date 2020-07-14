@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>질병관리본부</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/lib/w3.css">
+	<link rel="shotycut icon" type="image/x-icon" href="./p.img/title.png">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		li{
+			list-style-type: none;
+		}
+		.clear{
+			clear: both;
+		}
+		/*시작 전에 기본적인 정리부터_ 초기화 작업*/
+
+/*		#page{
+			width: 1300px;
+			margin: auto;
+			border: solid 0px #bbbbbb;
+		}*/
+		body{
+			background-image: url(./p.img/bg.png);
+			background-size: 1691px 800px;
+			background-position: 0 58%;
+			background-color: #F5F6FA;
+			background-repeat:no-repeat;
+		}
+		header{
+			width: 1200px;
+			height: 100px;
+			text-align: center;
+			padding-left: 245.5px;
+			padding-right: 245.5px;
+			border: solid 1px #ffffff;
+			position: absolute;
+			position: fixed;
+			background-color: #ffffff;
+			border-bottom: solid 1px #EAEEF3;
+		}
+
+		nav{
+			margin-top: 102px;
+			width: 1300px;
+			height: 58px;
+			padding-left: 245.5px;
+			padding-right: 245.5px;
+			position: absolute;
+			position: fixed;
+			border: solid 0px #ffffff;
+			background-color: #ffffff;
+			border-bottom: solid 1px #D9DDE2;
+			font-family: '한컴산뜻돋움'
+		}
+		nav li{
+			display: inline-block;
+			font-size: 19px;
+			/*margin: 15px 0;*/
+		}
+		#bar{
+			background-color: #ffffff;
+			padding: 15.5px 0;
+		}
+		#bar:hover{
+			color: #21A089;
+			border-bottom: solid 3px #21A089;
+		}
+
+		section{
+			float: left;
+			/*padding-bottom: 20px;*/
+			/*border: solid 1px #bbbbbb;*/
+		}
+
+		aside{
+			float: right;
+			/*border: solid 1px #bbbbbb;*/
+		}
+
+		footer{
+		height: 170px;
+		/*border: solid 1px #bbbbbb;*/
+		background-color: #F5F6FA;
+		border-top: solid 1px #F0F1F3;
+		}
+		
+		#logo{
+			float: left;
+			margin-top: 25px;
+		}
+		.top{
+			width: 500px;
+			height: 42px;
+			border: solid 2px #21A089;
+			background: #ffffff;
+			margin: 27px 0 0 285px;
+		}
+		input{
+		font-size: 17.5px;
+		color: #757575;
+		width: 440px;
+		padding: 10px 0 0 10px;
+		border: 0px;
+		outline: none;
+		text-align: left;
+		font-weight: bold;
+	}
+	#search{
+			width: 45px;
+			height: 100%;
+			border: 0px;
+			background: #21A089;
+			outline: none;
+			float: right;
+			color: #ffffff;
+			cursor: pointer;
+	}
+	#slide{
+		float: right;
+		margin-right: 57px;
+		margin-top: 29px;
+	}
+	#underbutton2{
+			 width: 215px;
+ 			 height: 39px;
+ 			 text-align: left;
+ 			 padding: 10px 0px 10px 40px;
+ 			 border: solid 1px #ffffff;
+ 			 background-color: #ffffff;
+ 			 cursor: pointer;
+ 			 font-size: 14.5px;
+	}
+	 #underbutton2:focus{
+ 			outline: none;
+ 		}
+ 		#round{
+ 			width: 50px;
+ 			height: 35px;
+ 			border: solid 1px #E3E7EC;
+ 			background-color: #F5F6FA;
+ 			border-radius: 50px;
+ 			padding: 6px 9px 4px 7px;
+ 			font-size: 11px;
+ 			color: #848589;
+ 			margin-right: 6px;
+
+ 		}
+	#updown2{
+		 	float: right;
+ 			padding-top: 4px;
+ 			color: black;
+	}
+	 #updown2:active{
+ 			transform: rotateX( 180deg );
+ 		}
+	#eng{
+		float: right;
+		margin-right: 28px;
+		margin-top: 38px;
+		cursor: pointer;
+		font-size: 17px;
+	}
+	#list{
+		float: right;
+		margin-right: 5px;
+		margin-top: 40px;
+		cursor: pointer;	
+	}
+
+
+	#mar{
+		margin: 0 22px;
+	}
+
+
+	#main{
+		text-align: center;
+		margin-left: 245.5px;
+		margin-top: 150px;
+		margin-bottom: 20px;
+	}
+
+		#sub1{
+			padding-left: 245.5px;
+			padding-right: 245.5px;
+			margin: 17px 0 40px 0;
+			
+		}
+		#sub1 li{
+			display: inline-block;
+			text-align: center;
+			/*background-color: #bbbbbb;*/
+		}
+
+		#box{
+		text-align: center;
+		background-color: #ffffff;
+		border-bottom: solid 2px #21A089;
+		padding: 23px 0;
+		}
+
+		#box2{
+		text-align: center;
+		background-color: #ffffff;
+		border-bottom: solid 2px #4A75B9;
+		padding: 22px 0;
+		}
+
+		#box3{
+		text-align: center;
+		background-color: #ffffff;
+		border-bottom: solid 2px #C24EA8;
+		padding: 22px 0;
+		}
+
+		#help{
+			overflow: hidden;
+		}
+		#sub1 img{
+			width: 284.9px;
+			display: block;
+		}
+		#sub1 img:hover{
+			transform: scale(1.1);
+ 			transition: transform 0.5s;
+		}
+		#sub2{
+			/*border: solid 1px #bbbbbb;*/
+			margin-left: 245.5px;
+			margin-right: 245.5px;
+			padding: 50px 0;
+			text-align: center;
+			width: 1199.5px;
+			background-color: #ffffff;
+
+		}
+		#quick{
+			float: left;
+			padding-left: 60px;
+			padding-bottom: 50px;
+		}
+
+
+		#sub2 li{
+			display: inline-block;
+			text-align: center;
+			padding: 0 20px;
+			font-size: 14px;
+			width: 115px;
+
+		}
+		#align{
+			padding-top: 10px;
+		}
+		#trans2 img{
+			padding-top: 10px;
+			width: 75px;
+			height: 75px;
+		}
+
+		#sub34{
+			margin-left: 245.5px;
+			margin-right: 245.5px;
+		}
+		#sub3{
+			border: solid 1px #E1E6EB;
+			width: 790.2px;
+			height: 270px;
+			background-color: #ffffff;
+		}
+		#tabs{
+			background-color: #ffffff;
+			width: 712px;
+			margin-left: 38px;
+			border-bottom: solid 1px #E1E6EB;
+		}
+		#space{
+			background-color: #ffffff;
+			/*border:solid 1px gray;*/
+			padding-bottom: 16px;
+			float: left;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		#tab2:hover{
+			border-bottom: solid 1px #21A089;
+		}
+		#tab2:active{
+			color: #21A089;
+			border-bottom: solid 1px #21A089;
+		}
+		#tab2{
+			padding: 20px 0 0 0;
+		}
+		#tab3{
+			float: right;
+			font-size: 13.3px;
+			padding: 24px 0 0 0;
+			color: #AAAAAA;
+		}
+		#sub3 li{
+			display: inline-block;
+		}
+		#news{
+			display: inline-block;
+			padding-top: 25px;
+		}
+		#news1{
+			float: left;
+			padding-left: 28px;
+		}
+		#news2{
+			padding-left: 24px;
+			float: left;
+			padding-right: 36px;
+		}
+		#sub4{
+			margin-left: 14px;
+			border: solid 1px #E1E6EB;
+			width: 391.4px;
+			height: 270px;
+			background-color: #ffffff;
+		}
+		#sub4 li{
+			display: inline-block;
+		}
+
+		#tab{
+			border-bottom: solid 1px #E1E6EB;
+			background-color: #F5F6FA;
+			padding: 12px 30.1px;
+			float: left;
+			cursor: pointer;
+		}
+		#tab:hover{
+			border-top: solid 2px #043763;
+			color: #04377C;
+			background-color: #ffffff;
+			border-bottom-color: #ffffff;
+		}
+		#hangl{
+			margin: 25px 0 20px 35px;
+			float: left;
+		}
+		#namo:hover{
+			background-color: #21A089;
+			color: #ffffff;
+			border-color: #21A089;
+		}
+		#namo{
+			border: solid 1px #E1E6EB;
+			background-color: #F5F6FA;
+			padding: 6px 12px 4px 12px;
+			margin-bottom: 6px;
+			font-size: 15px;
+		}
+
+		#etc{
+			margin: 10px 0 10px 35px;
+			font-size: 12.5px;
+			float: left;
+		}
+		#radius{
+			border: solid 1px #E1E6EB;
+			background-color: #ffffff;
+			padding: 5px 10px;
+			border-radius: 20px;
+			margin-bottom: 6px;
+		}
+		#radius2{
+			border: solid 1px #E1E6EB;
+			background-color: #F5F6FA;
+			padding: 5px 10px;
+			border-radius: 20px;
+			margin-bottom: 6px;
+		}
+		#sub567{
+			margin-top: 30px;
+			margin-left: 245.5px;
+			margin-right: 245.5px;
+			cursor: pointer;
+/*			width: 1200px;
+			height: 260px;*/
+		}
+
+		#sub5{
+			margin-right: 14px;
+			float: left;
+			/*border: solid 1px gray;*/
+			width: 389px;
+			height: 250px;
+			background-color: #ffffff;
+		}
+
+		#sub6{
+			margin-right: 15.5px;
+			float: left;
+			/*border: solid 1px gray;*/
+			width: 389px;
+			height: 250px;
+		}
+
+		#sub7{
+			float: left;
+			/*border: solid 1px gray;*/
+			width: 389px;
+			height: 250px;
+			background-color: #ffffff;
+		}
+
+
+		#sub8{
+			padding-left: 245px;
+			padding-right: 245.5px;
+			margin-top: 25px;
+			width: 1200px;
+			background-color: #ffffff;
+			/*border:solid 1px #bbbbbb;*/
+		}
+		#quick2{
+			padding-left: 25px;
+			float: left;
+		}
+		#Promise{
+			padding-top: 15px;
+			float: left;
+			padding-left: 25px;
+		}
+		#Promise2{
+			float: left;
+			padding-left: 25px;
+			font-size: 14.5px;
+			line-height: 150%;
+			padding-bottom: 30px;
+		}
+		#linedown{
+			background-color: #FFD02B;
+			padding-top: 20px;
+
+		}
+		#sns{
+			float: right;
+			padding-right: 30px;
+			/*padding-left: 700px;*/
+
+		}
+		#sns li{
+			display: inline-block;
+			/*width: 140px;*/
+
+		}
+		#trans1 img{
+			width: 100px;
+			height: 100px;
+			margin-top: 10px;
+		}
+
+		#sub9{
+			margin-left: 245.5px;
+			margin-right: 245.5px;
+			margin-bottom: 55px;
+			margin-top: 55px;
+			background-color: #F5F6FA;
+		}
+
+ 		#sub9 li{
+ 			display: inline-block;
+ 			text-align: center;
+ 			border-bottom: solid 2px #D3D8DD;
+ 			/*이미지 전체가 커지는 것 말고 안쪽 그림만 커지도록 보이기 위해 사용 = 이미지의 너비높이를 벗어나면 보이지 않는다*/
+ 		}
+ 		#sub9 li:hover{
+ 			border-color: #21A089;
+ 		}
+ 		#box4{
+		text-align: center;
+		background-color: #ffffff;
+		padding: 16px 0;
+		}
+
+		#small{
+			font-size: 14px;
+		}
+ 		#ad{
+ 			overflow: hidden;
+ 		}
+
+ 		#sub9 img{
+ 			width: 288.2px;
+ 			display: block;
+ 			/*아래 여백 영역이 사라져서 깔끔함*/
+ 		}
+ 		#sub9 img:hover{
+ 			transform: scale(1.1);
+ 			transition: transform 0.5s;
+ 			/*이미지를 0.5초 동안 1.1베 커지게*/
+ 		}
+ 		#sub10{
+ 			/*padding-left: 228.5px;
+			padding-right: 228.5px;*/
+			text-align: center;
+ 		}
+ 		#sub10 ul{
+ 			/*border: solid 1px red;*/
+ 			border-top: solid 3px #F5F6FA;
+ 			background-color: #ffffff;
+			padding: 20px 0;
+			text-align: center;
+ 		}
+ 		#sub10 li{
+ 			display: inline;
+ 			font-family: '한컴산뜻돋움'
+ 		}
+ 		#rel1{
+ 			float: left;
+ 			padding-right: 20px;
+ 			padding-left: 245.5px;
+ 		}
+ 		#rel2{
+ 			font-size: 14px;
+ 			padding-right: 20px;
+ 			color: #272727;
+ 			font-weight: bold;
+ 		}
+
+ 		a{
+ 			text-decoration: none;
+ 		}
+ 		#fixed1{
+			position: absolute;
+			position: fixed;
+			top: 280px;
+			right: 0;
+			z-index: 3;
+			margin-right: 30px;
+		}
+		#fixed1 li{
+			text-align: center;
+			margin: 13px 0;
+		}
+		#no{
+			color: #8996A9;
+			font-size: 16px;
+		}
+		#yes img{
+			width: 90px;
+			height: 90px;
+			cursor: pointer;
+		}
+
+ 		#fixed2{
+			position: absolute;
+			position: fixed;
+			top: 822px;
+			margin-right: 50px;
+			right: 0;
+			z-index: 3;
+			/*width: 50px;
+			height: 50px;
+			border-radius: 50px;
+			font-size: 14px;
+			text-align: center;
+			background-color: #043763;
+			color: white;*/
+			cursor: pointer;
+		}
+ 		#under{
+ 			float: left;
+ 			margin-left: 245.5px;
+ 			font-size: 13px;
+ 			margin-top: 35px;
+ 			font-family: "한컴산뜻돋움";
+ 			font-weight: bold;
+
+ 		}
+ 		#under li{
+ 			display: inline;
+ 		}
+ 		#under2{
+ 			float: right;
+ 			margin-right: 245.5px;
+ 			font-size: 13px;
+ 			margin-top: 25px;
+ 			font-family: "한컴산뜻돋움";
+ 			color: #64676C;
+ 		}
+ 		#under2 li{
+ 			display: inline;
+ 		}
+ 		.underbutton{
+ 			 width: 210px;
+ 			 height: 39px;
+ 			 text-align: left;
+ 			 padding: 10px 0px 10px 10px;
+ 			 border: solid 1px #D3D8DD;
+ 			 background-color: #F5F6FA;
+ 			 cursor: pointer;
+ 		}
+ 		.underbutton:focus{
+ 			outline: none;
+ 		}
+
+
+.menudown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 208px;
+    overflow: auto;
+    border: solid 1px #EAEEF3;
+
+}
+
+ .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: solid 1px #EAEEF3;
+}
+
+.show {display:block;}
+
+
+
+ 		#updown{
+ 			float: right;
+ 			padding-right: 18px;
+ 			padding-top: 2px;
+ 			color: #64676C;
+ 		}
+ 		#updown:active{
+ 			transform: rotateX( 180deg );
+ 		}
+ 		#under3{
+ 			float: left;
+ 			margin-left: 245.5px;
+ 			font-size: 13px;
+ 			margin-top: 25px;
+ 			font-family: 'Noto Sans KR';
+ 			/*font-family: "한컴산뜻돋움";*/
+ 			color: #64676C;
+ 			line-height: 165%;
+ 		}
+ 		#under4{
+ 			float: right;
+ 			margin-right: 245.5px;
+ 			margin-top: 25px;
+ 		}
+ 		#under4 li{
+ 			display: inline;
+ 		}
+	</style>
+	<script src="https://kit.fontawesome.com/e90beb1e33.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+<header>
+<div id="logo"><a href="index.html"><img src="./p.img/logo.png" height="55"></a></div>
+
+<div id="list"> <a href="project04.html"><img src="./p.img/list.png" width="20"></a></div>
+<div id="eng"> <a href="http://www.cdc.go.kr/cdc_eng/" style="text-decoration:none; color: #343639;"> ENG </a></div>
+
+<div id="slide"><button id="underbutton2"><span id="round"><i>1</i></span> 코로나19 <div id="updown2"><img src="./p.img/chevron2.png" height="15"></div></button></div>
+
+<div class="top">
+<input type="text" placeholder="검색어를 입력해주세요." style="font-family: 한컴산뜻돋움;">
+<button id="search"><i class="fas fa-search fa-lg"></i></button>
+
+<div class="clear"></div>
+
+</div>
+</header>
+<div class="clear"></div>
+<!-- 위에 logo와 top에 주었던 정렬 기능을 여기서부터 초기화 시킴 -->
+
+<nav>
+	<div>
+	<ul>
+		<li style=" margin-left: 13px; margin-right: 22px;"><div id="bar"><!-- <a href="http://www.cdc.go.kr/contents.es?mid=a20101000000" style="text-decoration:none; color: #343639; outline: none;"> -->감염병</a></div>
+			<!-- <ul class="drop">
+				<li>감염병정보</li>
+			</ul> -->
+		</li>
+		<li id="mar"><div id="bar"><!-- <a href="http://www.cdc.go.kr/contents.es?mid=a20203010000" style="text-decoration:none; color: #343639; outline: none;"> -->건강정보</a></div></li>
+		<li id="mar"><div id="bar"><!-- <a href="http://www.cdc.go.kr/contents.es?mid=a20301020100" style="text-decoration:none; color: #343639; outline: none;"> -->정책정보</a></div></li>
+		<li id="mar"><div id="bar"><!-- <a href="http://www.cdc.go.kr/contents.es?mid=a20401060000" style="text-decoration:none; color: #343639; outline: none;"> -->연구개발</a></div></li>
+		<li id="mar"><div id="bar"><!-- <a href="http://www.cdc.go.kr/gallery.es?mid=a20509000000&bid=0007" style="text-decoration:none; color: #343639; outline: none;"> -->알림ㆍ자료</a></div></li>
+		<li id="mar"><div id="bar"><!-- <a href="https://www.cdc.go.kr/board/board.es?mid=a20602010000&bid=0034&cg_code=C13" style="text-decoration:none; color: #343639; outline: none;"> -->간행물ㆍ통계</a></div></li>
+		<li id="mar"><div id="bar"><!-- <a href="page1.html" style="text-decoration:none; color: #343639; outline: none;"> -->민원ㆍ정보공개</a></div></li>
+		<li id="mar"><div id="bar"><!-- <a href="http://www.cdc.go.kr/contents.es?mid=a20801010000" style="text-decoration:none; color: #343639; outline: none;"> -->기관소개</a></div></li>
+		<li style="margin-left: 22px; color: #343639; cursor: pointer;"><div id="bar">사업별홈페이지</div></li>
+	</ul>
+	</div>
+</nav>
+
+<div class="clear"></div>
+
+<section>
+	<div id="main"><a href="http://ncov.mohw.go.kr/" target="_blank"><img src="./p.img/main.png" width="1200"></a></div>
+</section>
+
+<aside>
+	<div id="fixed1">
+		<ul>
+			<li id="no"><b>사용자별<br>맞춤메뉴</b></li>
+			<li><div id="yes"><img src="./p.img/side.png" onmouseover="this.src='./p.img/side11.png'" onmouseout="this.src='./p.img/side.png'"></li>
+			<li><div id="yes"><img src="./p.img/side2.png" onmouseover="this.src='./p.img/side22.png'" onmouseout="this.src='./p.img/side2.png'"></div></li>
+			<li><div id="yes"><img src="./p.img/side3.png" onmouseover="this.src='./p.img/side33.png'" onmouseout="this.src='./p.img/side3.png'"></div></li>
+		</ul>
+	</div>
+</aside>
+
+<aside>
+	<div id="fixed2">
+		<!-- <i class="fas fa-chevron-up fa-sm"></i> <br> TOP -->
+		<a href="index.html"><img src="./p.img/top.png" width="50"></a>
+	</div>
+</aside>
+
+<div class="clear"></div>
+
+<section>
+	<div id="sub1">
+	<ul>
+		<a href="http://www.cdc.go.kr/contents.es?mid=a20304010900" style="text-decoration:none; color: #343639; outline: none;"><li><div id="help"><img src="./p.img/help.png"></div><div id="box">온혈질환 건강수칙</div></li></a>
+		<a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&act=view&list_no=367389&tag=&nPage=2" style="text-decoration:none; color: #343639; outline: none;"><li style="margin:0 14.3px;"> <div id="help"><img src="./p.img/help2.png"></div><div id="box2">비브리오패혈증 예방수칙</div></li></a>
+		<a href="http://www.cdc.go.kr/gallery.es?mid=a20503030300&bid=0004&act=view&list_no=144522" style="text-decoration:none; color: #343639; outline: none;"><li style="margin-right: 14.3px;"> <div id="help"><img src="./p.img/help3.png"></div><div id="box3">미세먼지 건강수칙</div></li></a>
+		<a href="http://www.cdc.go.kr/gallery.es?mid=a20503030300&bid=0004" style="text-decoration:none; color: #343639; outline: none;"><li><div id="help"><img src="./p.img/help4.png"></div><div id="box">코로나19 영상자료</div></li></a>
+	</ul>
+	</div>
+</section>
+
+<div class="clear"></div>
+
+<section>
+	<ul id="sub2">
+		<div id="quick"><img src="./p.img/quick.png" width="130"></div>
+
+		<li><div id="trans2"><a href="http://www.cdc.go.kr/cdc/travelList.es?mid=a20102010101" style="text-decoration:none; color: #343639; outline: none;"><img src="./p.img/icon.png" onmouseover="this.src='./p.img/icon11.png'" onmouseout="this.src='./p.img/icon.png'"></div><div id="align">국가별질병정보</div></li></a>
+
+		<li><div id="trans2"><a href="http://www.cdc.go.kr/gallery.es?mid=a20503010000&bid=0002" style="text-decoration:none; color: #343639; outline: none;"><img src="./p.img/icon2.png" onmouseover="this.src='./p.img/icon22.png'" onmouseout="this.src='./p.img/icon2.png'"></div><div id="align">홍보자료</div></li></a>
+
+		<li><div id="trans2"><a href="https://www.cdc.go.kr/board/board.es?mid=a20602010000&bid=0034&cg_code=C13" style="text-decoration:none; color: #343639; outline: none;"><img src="./p.img/icon3.png" onmouseover="this.src='./p.img/icon33.png'" onmouseout="this.src='./p.img/icon3.png'"></div><div id="align">간행물ㆍ통계</div></li></a>
+
+		<li><div id="trans2"><a href="http://www.cdc.go.kr/contents.es?mid=a20805000000" style="text-decoration:none; color: #343639; outline: none;"><img src="./p.img/icon4.png" onmouseover="this.src='./p.img/icon44.png'" onmouseout="this.src='./p.img/icon4.png'"></div><div id="align">조직도ㆍ직원찾기</div></li></a>
+
+		<li><div id="trans2"><a href="http://www.cdc.go.kr/board.es?mid=a20507010000&bid=0006" style="text-decoration:none; color: #343639; outline: none;"><img src="./p.img/icon5.png" onmouseover="this.src='./p.img/icon55.png'" onmouseout="this.src='./p.img/icon5.png'"></div><div id="align">법령ㆍ지침ㆍ서식</div></li></a>
+
+		<li><div id="trans2"><a href="http://www.cdc.go.kr/board.es?mid=a20505000000&bid=0017" style="text-decoration:none; color: #343639; outline: none;"><img src="./p.img/icon6.png" onmouseover="this.src='./p.img/icon66.png'" onmouseout="this.src='./p.img/icon6.png'"></div><div id="align">공고/공시</div></li></a>
+	</ul>
+</section>
+
+<div class="clear"></div>
+
+<div id="sub34">
+<section>
+	<ul id="sub3">
+		<div id="tabs">
+		<li id="tab2" style="margin-right: 25px;"><div id="space">보도자료</div></li>
+		<li id="tab2" style="margin-right: 25px;"><div id="space">공지사항</div></li>
+		<li id="tab2" style="margin-right: 25px;"><div id="space">채용공고</div></li>
+		<li id="tab2"><div id="space">주간건강과질병</div></li>
+		<a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015"><li id="tab3"><div id="space">더보기+</div></li></a>
+		</div>
+		<div class="clear"></div>
+		<ul id="news">
+			<a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367770&act=view"><li id="news1"><img src="./p.img/news.png" height="150"></li></a>
+			<a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367768&act=view"><li id="news2"><img src="./p.img/news5.png" height="35"></li></a>
+			<a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367765&act=view"><li id="news2"><img src="./p.img/news2.png" height="35"></li></a>
+			<a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367763&act=view"><li id="news2"><img src="./p.img/news4.png" height="35"></li></a>
+			<a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367759&act=view"><li id="news2"><img src="./p.img/news3.png" height="35"></li></a>
+
+		</ul>
+		
+	</ul>
+</section>
+
+<section>
+	<ul id="sub4">
+		<li id="tab" style="border-right: solid 1px #E1E6EB;">감염병정보</li>
+		<li id="tab" style="border-right: solid 1px #E1E6EB;">건강정보</li>
+		<li id="tab">손상정보</li>
+		<ul id="buttons">
+			<div id="hangl">
+			<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppLwcrIcdMain.do?tabFlag=2" target="_blank" style=" text-decoration:none; color: #666666;"><li id="namo">ㄱ</li></a>
+			<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppLwcrIcdMain.do?tabFlag=2" target="_blank" style=" text-decoration:none; color: #666666;"><li id="namo">ㄴ</li></a>
+			<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppLwcrIcdMain.do?tabFlag=2" target="_blank" style=" text-decoration:none; color: #666666;"><li id="namo">ㄷ</li></a>
+			<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppLwcrIcdMain.do?tabFlag=2" target="_blank" style=" text-decoration:none; color: #666666;"><li id="namo">ㄹ</li></a>
+			<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppLwcrIcdMain.do?tabFlag=2" target="_blank" style=" text-decoration:none; color: #666666;"><li id="namo">ㅁ</li></a>
+			<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppLwcrIcdMain.do?tabFlag=2" target="_blank" style=" text-decoration:none; color: #666666;"><li id="namo">ㅂ</li></a>
+			<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppLwcrIcdMain.do?tabFlag=2" target="_blank" style=" text-decoration:none; color: #666666;"><li id="namo">ㅅ</li></a>
+			<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppLwcrIcdMain.do?tabFlag=2" target="_blank" style=" text-decoration:none; color: #666666;"><li id="namo">ㅇ</li></a>
+			<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppLwcrIcdMain.do?tabFlag=2" target="_blank" style=" text-decoration:none; color: #666666;"><li id="namo">ㅈ</li></a>
+			<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppLwcrIcdMain.do?tabFlag=2" target="_blank" style=" text-decoration:none; color: #666666;"><li id="namo">ㅊ</li></a>
+			<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppLwcrIcdMain.do?tabFlag=2" target="_blank" style=" text-decoration:none; color: #666666;"><li id="namo">ㅋ</li></a>
+			<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppLwcrIcdMain.do?tabFlag=2" target="_blank" style=" text-decoration:none; color: #666666;"><li id="namo">ㅌ</li></a>
+			<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppLwcrIcdMain.do?tabFlag=2" target="_blank" style=" text-decoration:none; color: #666666;"><li id="namo">ㅍ</li></a>
+			<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppLwcrIcdMain.do?tabFlag=2" target="_blank" style=" text-decoration:none; color: #666666;"><li id="namo">ㅎ</li></a>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="etc">
+				<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppSumryMain.do?icdCd=NA0014&icdgrpCd=01&icdSubgrpCd=" target="_blank" style="color: #666666;"><li id="radius">메르스</li></a>
+				<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppSumryMain.do?icdCd=ND0001&icdgrpCd=04&icdSubgrpCd=" target="_blank" style="color: #666666;"><li id="radius">인플루엔자</li></a>
+				<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppSumryMain.do?icdCd=NC0026&icdgrpCd=03&icdSubgrpCd=" target="_blank" style="color: #666666;"><li id="radius">지카바이러스</li></a>
+				<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppSumryMain.do?icdCd=NB0001&icdgrpCd=02&icdSubgrpCd=" target="_blank" style="color: #666666;"><li id="radius">결핵</li></a>
+				<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppSumryMain.do?icdCd=ND0615&icdgrpCd=04&icdSubgrpCd=ND0006" target="_blank" style="color: #666666;"><li id="radius">노로바이러스</li></a>
+				<a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppSumryMain.do?icdCd=NB0009&icdgrpCd=02&icdSubgrpCd=" target="_blank" style="color: #666666;"><li id="radius">A형감염</li></a>
+				<a href="http://www.cdc.go.kr/npt/biz/npp/nppMain.do" target="_blank"><li id="radius2" style="color: #666666;">더보기+</li></a>
+			</div>
+		</ul>
+
+	</ul>
+</section>
+</div>
+
+<div class="clear"></div>
+
+<div id="sub567">
+<div id="sub5">
+<div class="slide5">
+		<img class="mySlides2" src="./p.img/slide1.png" width="389" height="250" style="width: 100%;">
+		<img class="mySlides2" src="./p.img/slide12.png" width="389" height="250" style="width: 100%;">
+		<img class="mySlides2" src="./p.img/slide13.png" width="389" height="250" style="width: 100%;">
+		<img class="mySlides2" src="./p.img/slide14.png" width="389" height="250" style="width: 100%;">
+		<img class="mySlides2" src="./p.img/slide15.png" width="389" height="250" style="width: 100%;">
+		<img class="mySlides2" src="./p.img/slide16.png" width="389" height="250" style="width: 100%;">
+		<img class="mySlides2" src="./p.img/slide17.png" width="389" height="250" style="width: 100%;">
+		<img class="mySlides2" src="./p.img/slide18.png" width="389" height="250" style="width: 100%;">
+		<img class="mySlides2" src="./p.img/slide19.png" width="389" height="250" style="width: 100%;">
+		<img class="mySlides2" src="./p.img/slide20.png" width="389" height="250" style="width: 100%;">
+		<img class="mySlides2" src="./p.img/slide21.png" width="389" height="250" style="width: 100%;">
+		<img class="mySlides2" src="./p.img/slide22.png" width="389" height="250" style="width: 100%;">
+	</div>
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides2");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div id="sub6">
+	<section>
+		<a href="https://www.epeople.go.kr/idea/index.npaid" target="_blank"><img src="./p.img/slide2.png" width="389" height="250"></a>
+	</section>
+</div>
+
+<div id="sub7">
+	<div class="slide7">
+		<img class="mySlides" src="./p.img/slide3.png" width="389" height="250" style="width: 100%;">
+		<img class="mySlides" src="./p.img/slide34.png" width="389" height="250" style="width: 100%;">
+				<img class="mySlides" src="./p.img/slide32.png" width="389" height="250" style="width: 100%;">
+		<img class="mySlides" src="./p.img/slide35.png" width="389" height="250" style="width: 100%;">
+		<img class="mySlides" src="./p.img/slide33.png" width="389" height="250" style="width: 100%;">
+	</div>
+	<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+</div>
+
+<div class="clear"></div>
+
+<section  id="sub8">
+	<div id="quick2"><img src="./p.img/quick2.png" width="120"></div>
+
+	<div class="clear"></div>
+
+	<div id="Promise"><img src="./p.img/promise.png" width="500"></div>
+
+	<ul id="sns">
+		<li><div id="trans1" style="margin-right: 55px;">
+			<a href="https://www.facebook.com/koreacdcpr" target="_blank"><img src="./p.img/facebook.png" onmouseover="this.src='./p.img/facebook2.png'" onmouseout="this.src='./p.img/facebook.png'"></a>
+		</div></li>
+		<li><div id="trans1" style="margin-right: 55px;">
+			<a href="https://twitter.com/KoreaCDC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="./p.img/twitter.png" onmouseover="this.src='./p.img/twitter2.png'" onmouseout="this.src='./p.img/twitter.png'"></a>
+		</div></li>
+		<li><div id="trans1" style="margin-right: 55px;">
+			<a href="https://post.naver.com/my.nhn?memberNo=20182790" target="_blank"><img src="./p.img/post.png" onmouseover="this.src='./p.img/post2.png'" onmouseout="this.src='./p.img/post.png'"></a>
+		</div></li>
+		<li><div id="trans1" style="margin-right: 10px;">
+			<a href="https://www.youtube.com/channel/UCa7-3Zvxg-5Rfxgu3RQY_gw" target="_blank"><img src="./p.img/youtube.png" onmouseover="this.src='./p.img/youtube2.png'" onmouseout="this.src='./p.img/youtube.png'"></a>
+		</div></li>
+
+	</ul>
+
+		<div class="clear"></div>
+
+	<div id="Promise2">국가공중보건관리 중추기관으로서 국민 건강을 증진하고, 전문성·혁신·소통·신뢰를<br>기반으로 24시간 365일 최선을 다하겠습니다.</div>
+
+</section>
+
+<div class="clear"></div>
+
+<section>
+	<ul id="sub9">
+		<a href="https://www.youtube.com/watch?v=WPf5XMvCjRg&feature=youtu.be" target="_blank" style="color: #343639;"><li><div id="ad"><img src="./p.img/ad.png"></div><div id="box4"><strong>진짜 힘은 손 씻을 때 생긴다!</strong><br><div id="small">마블 콜라보 질병예방 캠페인</div></div></li></a>
+		<a href="http://www.cdc.go.kr/contents.es?mid=a20301020701" style="color: #343639;"><li style="margin: 0 10px;"><div id="ad"><img src="./p.img/ad2.png"></div><div id="box4"><strong>중동지역을 방문하셨나요?</strong><br><div id="small">메르스 의심증상 발생 시 1339</div></div></li></a>
+		<a href="http://www.cdc.go.kr/gallery.es?mid=a20503020000&bid=0003&b_list=9&act=view&list_no=144674&nPage=1&vlist_no_npage=1&keyField=&keyWord=&orderby=" style="color: #343639;"><li style="margin-right: 10px;"><div id="ad"><img src="./p.img/ad3.png"></div><div id="box4"><strong>기침예절 지켜요!</strong><br><div id="small">기침예절은 감염병 예방의 기본수칙</div></div></li></a>
+		<a href="page1.html" style="color: #343639;"><li><div id="ad"><img src="./p.img/ad4.png"></div><div id="box4"><strong>1339 질병관리본부 콜센터</strong><br><div id="small">질병정보 궁금할 때 감염병이 의심될 때</div></div></li></a>
+	</ul>
+</section>
+
+<div class="clear"></div>
+
+<section>
+	<div id="sub10">
+		<ul>
+		<li id="rel1"><strong>관련링크</strong> <i class="fas fa-chevron-left fa-xs" style="padding-left: 3px; cursor: pointer;"></i> &nbsp;<i class="fas fa-chevron-right fa-xs" style="cursor: pointer;"></i></li>
+		<a href="http://www.digitalcpg.kr/"><li id="rel2" style="padding-left: 17px;">임상진료지침 디지털 가이드라인</li></a>
+		<a href="http://www.cdc.go.kr/contents.es?mid=a40504010000"><li id="rel2">KoGES</li></a>
+		<a href="https://ophrp.org/" target="_blank"><li id="rel2">질병관리본부국제학술지(Osong PHRP)</li></a>
+		<a href="http://www.know-ckd.org/ckd/main/main.html" target="_blank"><li id="rel2">만성신장병코호트연구</li></a>
+		<a href="https://knhanes.cdc.go.kr/knhanes/main.do" target="_blank"><li id="rel2">국민건강영양조사</li></a>
+		<a href="http://library.nih.go.kr/ncmiklib/index/index.do" target="_blank"><li id="rel2">국립의과학지식센터</li></a>
+		<a href="https://hawelsis.kihasa.re.kr/" target="_blank"><li id="rel2" style="padding-right: 264px;">보건복지통계</li></a>
+		</ul>
+	</div>
+</section>
+
+<div class="clear"></div>
+
+<footer>
+
+<div id="under">
+<ul>
+	<li><a href="http://www.cdc.go.kr/contents.es?mid=a20810010000" style="text-decoration:none; color: #64676C;">이용안내</a>&nbsp;</li>
+	<li><a href="http://www.cdc.go.kr/contents.es?mid=a20810030000" style="text-decoration:none; color: #21A089;">개인정보처리방침</a>&nbsp;</li>
+	<li><a href="http://www.cdc.go.kr/contents.es?mid=a20810080000" style="text-decoration:none; color: #64676C;">웹접근성품질인증</a>&nbsp;</li>
+	<li><a href="http://www.cdc.go.kr/contents.es?mid=a20810070000" style="text-decoration:none; color: #64676C;">저작권정책</a>&nbsp;</li> 
+</ul>
+</div>
+
+<div id="under2">
+	<div class="menudown">
+	<button onclick="myFunction()" class="underbutton">질병관리본부 관련기관<div id="updown"><img src="./p.img/chevron.png" height="12"></div></button>
+	<div id="myDropdown" class="dropdown-content">
+		<a href="">미국질병통제예방센터[CDC]</a>
+		<a href="">유럽질병통제예방센터[CDC]</a>
+		<a href="">세계보건기구 [WHO]</a>
+		<a href="">일본감염병연구소[NIID]</a>
+		<a href="">영국공공보건국[PHE]</a>
+	</div>
+</div>
+
+	<button class="underbutton">보건환경연구원<div id="updown"><img src="./p.img/chevron.png" height="12"></div></button>
+
+	<button class="underbutton">보건복지부 및 소속기관<div id="updown"><img src="./p.img/chevron.png" height="12"></div></button></li>
+
+	<button class="underbutton">보건복지부 산하기관<div id="updown"><img src="./p.img/chevron.png" height="12"></div></button></li>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.underbutton')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</div>
+
+<div class="clear"></div>
+
+<div id="under3">
+	(28159) 충북 청주시 흥덕구 오송읍 오송생명2로 187 오송보건의료행정타운내 질병관리본부 ☎1339<br>
+COPYRIGHT © 2019 질병관리본부 ALL RIGHTS RESERVED.
+</div>
+
+<div id="under4">
+	<ul>
+		<li style="padding-right: 15px;"><a href="http://www.mois.go.kr/frt/sub/popup/p_taegugki_banner/screen.do" onclick="javascript:window.open('http://www.mois.go.kr/frt/sub/popup/p_taegugki_banner/screen.do','openPopupZone','toolbar=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=885,height=725,left=200,top=120' ); return false;" target="_blank" rel="noopener noreferrer" title="새창으로 열림"><img class src="./p.img/footer.png" height="52" title="행정자치부 국가상징 바로가기 새 창 열림" alt="국가상징알아보기"></a></li>
+
+		<li style="padding-right: 15px;"><a href="http://www.mcst.go.kr/html/pop/pop_govslogan.html" onclick="javascript:window.open('http://www.cdc.go.kr/cdc/img/main/gov_slogan.jpg','openPopup','toolbar=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=667,left=200,top=120' ); return false;" target="_blank" rel="noopener noreferrer" title="새창으로 열림"><img src="./p.img/footer2.png" height="52" title="국민의나라 정의로운 대한민국 새 창 열림" alt="국민의나라 정의로운 대한민국"></a></li>
+
+		<li style="padding-right: 15px;"><a href="http://www.kogl.or.kr/info/introduce.do" target="_blank"><img src="./p.img/footer3.png" height="52" title="새창으로 열림"></a></li>
+
+		<li style="padding-right: 15px;"><img src="./p.img/footer4.png" height="52"></li>
+
+		<li style="padding-right: 15px;"><a href="http://www.cdc.go.kr/cdc/img/main/goodcontents_cdc.png" onclick="javascript:window.open('http://www.cdc.go.kr/cdc/img/main/goodcontents_cdc.png','openPopupZone','toolbar=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=548,height=726,left=120,top=120' ); return false;" target="_blank" rel="noopener noreferrer" title="새창으로 열림"> <img class src="./p.img/footer5.png" height="52" alt="굿 콘텐츠 인증마크"></a></li>
+
+		<li><a href="http://www.i-award.or.kr/Web/Assess/FinalCandidateView.aspx?REG_SEQNO=9321" target="_blank"><img src="./p.img/footer6.png" height="52" title="새창으로 열림"></a></li>
+	</ul>
+</div>
+</footer>
+<div class="body"></div>
+</body>
+</html>
